@@ -1,0 +1,780 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0e0a1a" media="(prefers-color-scheme: dark)" />
+    <meta name="theme-color" content="#faf9fc" media="(prefers-color-scheme: light)" />
+
+    <title>Thirumalai V — DevOps & Cloud Automation Engineer</title>
+    <meta
+      name="description"
+      content="Portfolio of Thirumalai V — DevOps & Cloud Automation Engineer at Cisco Systems. Building automated deployment workflows with Python, Kubernetes/K3s, Docker, Linux, and CI/CD."
+    />
+    <meta name="author" content="Thirumalai V" />
+    <meta
+      name="keywords"
+      content="Thirumalai V, DevOps Engineer, Cloud Automation, Kubernetes, K3s, Docker, Python, Cisco, CI/CD, SRE, Linux, AWS"
+    />
+
+    <!-- Open Graph / LinkedIn / Twitter -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Thirumalai V — DevOps & Cloud Automation Engineer" />
+    <meta
+      property="og:description"
+      content="Aspiring DevOps & Cloud Automation Engineer. Automating deployments at Cisco with Python, Kubernetes, Docker, and Linux."
+    />
+    <meta name="twitter:card" content="summary_large_image" />
+
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%230b1020'/%3E%3Ctext x='50%25' y='58%25' font-size='34' font-family='monospace' fill='%2300d9a3' text-anchor='middle' font-weight='700'%3E%26gt;_%3C/text%3E%3C/svg%3E" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <!-- 3-layer background system: colorful orbs + subtle dot grid + film-grain texture -->
+    <div class="bg-orbs" aria-hidden="true"></div>
+    <div class="bg-dots" aria-hidden="true"></div>
+    <div class="bg-noise" aria-hidden="true"></div>
+
+    <!-- ============ NAV ============ -->
+    <header class="nav">
+      <a href="#top" class="logo" aria-label="Home">
+        <span class="logo-mark" aria-hidden="true">
+          <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 12h4l2-7 4 14 2-7h6" />
+          </svg>
+        </span>
+        <span class="logo-text">Thirumalai<span class="logo-dot">.</span></span>
+      </a>
+
+      <nav class="nav-links" id="navLinks">
+        <a href="#about">About</a>
+        <a href="#lifecycle">Lifecycle</a>
+        <a href="#skills">Stack</a>
+        <a href="#experience">Experience</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+      </nav>
+
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </header>
+
+    <main id="top">
+      <!-- ============ HERO ============ -->
+      <section class="hero">
+        <div class="hero-inner">
+          <p class="hero-eyebrow">
+            <span class="status-dot"></span>
+            Currently building at
+            <svg class="pill-logo" viewBox="0 0 36 24" width="22" height="14" aria-hidden="true">
+              <g fill="#1BA0D7">
+                <rect x="0" y="9" width="3" height="6" rx="0.5"/>
+                <rect x="5" y="6" width="3" height="12" rx="0.5"/>
+                <rect x="10" y="3" width="3" height="18" rx="0.5"/>
+                <rect x="15" y="0" width="3" height="24" rx="0.5"/>
+                <rect x="20" y="3" width="3" height="18" rx="0.5"/>
+                <rect x="25" y="6" width="3" height="12" rx="0.5"/>
+                <rect x="30" y="9" width="3" height="6" rx="0.5"/>
+              </g>
+            </svg>
+            <strong>Cisco Systems</strong>
+            <span class="sep">&middot;</span>
+            Open to DevOps &amp; Cloud roles
+          </p>
+
+          <h1 class="hero-title">
+            Hi, I'm <span class="grad-text">Thirumalai V</span>
+            <br />
+            I automate the boring parts of <span class="grad-text-2">infrastructure</span>.
+          </h1>
+
+          <div class="terminal" aria-label="Terminal introduction">
+            <div class="terminal-bar">
+              <span class="dot red"></span>
+              <span class="dot yellow"></span>
+              <span class="dot green"></span>
+              <span class="terminal-title">thirumalai@devops:~</span>
+            </div>
+            <div class="terminal-body">
+              <p><span class="prompt">$</span> whoami</p>
+              <p class="out" id="typed"></p>
+              <p>
+                <span class="prompt">$</span> cat current_role.yaml
+              </p>
+              <pre class="yaml">
+<span class="k">company</span>: Cisco Systems India Pvt Ltd
+<span class="k">role</span>: Software Automation Trainee
+<span class="k">team</span>: SBG &mdash; FMC
+<span class="k">stack</span>:
+  - python
+  - kubernetes / k3s
+  - docker
+  - linux
+  - rest_apis</pre>
+              <p>
+                <span class="prompt">$</span> <span class="caret">_</span>
+              </p>
+            </div>
+          </div>
+
+          <div class="hero-cta">
+            <a href="#projects" class="btn btn-primary">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><polyline points="16 18 22 12 16 6"></polyline><polyline points="8 6 2 12 8 18"></polyline></svg>
+              View Projects
+            </a>
+            <a href="assets/Thirumalai-V-DevOps-Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn btn-ghost" download>
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"></path><polyline points="7 10 12 15 17 10"></polyline><line x1="12" y1="15" x2="12" y2="3"></line></svg>
+              Download Resume
+            </a>
+            <a href="#contact" class="btn btn-ghost">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path></svg>
+              Get in Touch
+            </a>
+          </div>
+
+          <div class="hero-meta">
+            <a class="meta-link" href="mailto:thirumalaiv0114@gmail.com">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              thirumalaiv0114@gmail.com
+            </a>
+            <span class="meta-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
+              +91 86675 75645
+            </span>
+            <span class="meta-link">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg>
+              India
+            </span>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ ABOUT ============ -->
+      <section id="about" class="section reveal">
+        <div class="section-head">
+          <span class="section-num">01.</span>
+          <h2 class="section-title">About Me</h2>
+          <span class="section-rule"></span>
+        </div>
+
+        <div class="about-grid">
+          <div class="about-text">
+            <p>
+              I'm a <strong>DevOps &amp; Automation Engineer</strong> currently part of the
+              <strong>Cisco Systems SBG FMC team</strong>, where I work on
+              <strong>deployment automation</strong>, Linux environments, and
+              <strong>Kubernetes / K3s</strong> workflows that power FTD simulator infrastructure.
+            </p>
+            <p>
+              My day-to-day revolves around making repetitive things disappear &mdash; VM
+              provisioning, IP &amp; NAT configuration, K3s cluster setup, container deployment,
+              and API-driven registration flows &mdash; all stitched together with
+              <strong>Python</strong>, <strong>shell scripting</strong>, and
+              <strong>REST APIs</strong>.
+            </p>
+            <p>
+              I'm passionate about <strong>CI/CD</strong>, <strong>cloud-native tooling</strong>,
+              and building infrastructure that's <em>repeatable, observable, and boring (in a good
+              way)</em>. Long-term, I'm working toward a career as a
+              <strong>Cloud / SRE / Platform Engineer</strong>, with deep expertise in AWS,
+              Kubernetes, and infrastructure-as-code.
+            </p>
+
+            <ul class="about-bullets">
+              <li>
+                <span class="check">&#10003;</span> Hands-on enterprise experience at
+                <strong>Cisco</strong>
+              </li>
+              <li>
+                <span class="check">&#10003;</span> Strong in
+                <strong>Python, Linux, Docker, Kubernetes</strong>
+              </li>
+              <li>
+                <span class="check">&#10003;</span> CI/CD &amp; AWS fundamentals, learning
+                Terraform &amp; observability stacks
+              </li>
+              <li>
+                <span class="check">&#10003;</span> B.E. Computer Science &mdash; PSNA College of
+                Engineering and Technology, 2025
+              </li>
+            </ul>
+          </div>
+
+          <aside class="stats">
+            <div class="stat">
+              <div class="stat-num">3+</div>
+              <div class="stat-label">Internships &amp; Roles</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">6+</div>
+              <div class="stat-label">Professional Certifications</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">100%</div>
+              <div class="stat-label">Automation Mindset</div>
+            </div>
+            <div class="stat">
+              <div class="stat-num">∞</div>
+              <div class="stat-label">Curiosity</div>
+            </div>
+          </aside>
+        </div>
+      </section>
+
+      <!-- ============ DEVOPS LIFECYCLE ============ -->
+      <section id="lifecycle" class="section reveal">
+        <div class="section-head">
+          <span class="section-num">02.</span>
+          <h2 class="section-title">How I Build &amp; Automate</h2>
+          <span class="section-rule"></span>
+        </div>
+        <p class="section-lead">
+          The DevOps lifecycle I follow on every system &mdash; from idea to production and back again.
+        </p>
+
+        <div class="pipeline">
+          <article class="step-card">
+            <div class="step-illust" aria-hidden="true">
+              <svg viewBox="0 0 120 120" width="100%" height="100%">
+                <rect x="22" y="22" width="60" height="80" rx="6" fill="rgba(91,140,255,0.12)" stroke="#5b8cff" stroke-width="2"/>
+                <rect x="42" y="16" width="20" height="14" rx="3" fill="#5b8cff"/>
+                <rect x="30" y="42" width="44" height="3" rx="1.5" fill="#7d87a8"/>
+                <rect x="30" y="52" width="36" height="3" rx="1.5" fill="#7d87a8"/>
+                <rect x="30" y="62" width="40" height="3" rx="1.5" fill="#7d87a8"/>
+                <rect x="30" y="72" width="30" height="3" rx="1.5" fill="#7d87a8"/>
+                <g transform="rotate(10 88 78)">
+                  <rect x="68" y="58" width="40" height="40" rx="4" fill="#ffd966"/>
+                  <text x="88" y="84" text-anchor="middle" font-size="20" font-weight="800" fill="#5b3a00" font-family="JetBrains Mono, monospace">!</text>
+                </g>
+              </svg>
+            </div>
+            <span class="step-num">01</span>
+            <h3>Plan</h3>
+            <p>Define the workflow, choose the tools, and design for repeatability before writing a line of code.</p>
+          </article>
+
+          <article class="step-card">
+            <div class="step-illust" aria-hidden="true">
+              <svg viewBox="0 0 120 120" width="100%" height="100%">
+                <rect x="14" y="22" width="92" height="62" rx="5" fill="#0a1124" stroke="#00d9a3" stroke-width="2"/>
+                <circle cx="22" cy="30" r="2" fill="#ff5f57"/>
+                <circle cx="30" cy="30" r="2" fill="#febc2e"/>
+                <circle cx="38" cy="30" r="2" fill="#28c840"/>
+                <line x1="14" y1="36" x2="106" y2="36" stroke="#1f2a44" stroke-width="1"/>
+                <text x="22" y="50" font-family="JetBrains Mono, monospace" font-size="9" fill="#5b8cff">def</text>
+                <rect x="38" y="44" width="22" height="3" rx="1" fill="#b06bff"/>
+                <rect x="62" y="44" width="4" height="3" rx="1" fill="#aab3cf"/>
+                <text x="26" y="60" font-family="JetBrains Mono, monospace" font-size="9" fill="#aab3cf">return</text>
+                <rect x="56" y="54" width="34" height="3" rx="1" fill="#00d9a3"/>
+                <rect x="26" y="64" width="14" height="3" rx="1" fill="#5b8cff"/>
+                <rect x="42" y="64" width="40" height="3" rx="1" fill="#b06bff"/>
+                <rect x="26" y="72" width="22" height="3" rx="1" fill="#00d9a3"/>
+                <rect x="48" y="84" width="24" height="6" fill="#1f2a44"/>
+                <rect x="36" y="90" width="48" height="3" rx="1.5" fill="#1f2a44"/>
+              </svg>
+            </div>
+            <span class="step-num">02</span>
+            <h3>Code</h3>
+            <p>Write clean, modular Python &amp; shell &mdash; version-controlled with Git, reviewed, and easy to extend.</p>
+          </article>
+
+          <article class="step-card">
+            <div class="step-illust" aria-hidden="true">
+              <svg viewBox="0 0 120 120" width="100%" height="100%">
+                <rect x="18" y="72" width="84" height="24" rx="3" fill="rgba(91,140,255,0.15)"/>
+                <rect x="18" y="72" width="84" height="24" rx="3" stroke="#5b8cff" stroke-width="2" fill="none"/>
+                <rect x="26" y="80" width="6" height="8" fill="#5b8cff"/>
+                <rect x="36" y="80" width="6" height="8" fill="#5b8cff"/>
+                <rect x="46" y="80" width="6" height="8" fill="#5b8cff"/>
+                <rect x="56" y="80" width="6" height="8" fill="#5b8cff"/>
+                <rect x="28" y="44" width="64" height="24" rx="3" fill="rgba(0,217,163,0.15)"/>
+                <rect x="28" y="44" width="64" height="24" rx="3" stroke="#00d9a3" stroke-width="2" fill="none"/>
+                <rect x="36" y="52" width="6" height="8" fill="#00d9a3"/>
+                <rect x="46" y="52" width="6" height="8" fill="#00d9a3"/>
+                <rect x="56" y="52" width="6" height="8" fill="#00d9a3"/>
+                <rect x="38" y="20" width="44" height="20" rx="3" fill="rgba(176,107,255,0.15)"/>
+                <rect x="38" y="20" width="44" height="20" rx="3" stroke="#b06bff" stroke-width="2" fill="none"/>
+                <rect x="46" y="27" width="6" height="6" fill="#b06bff"/>
+                <rect x="56" y="27" width="6" height="6" fill="#b06bff"/>
+              </svg>
+            </div>
+            <span class="step-num">03</span>
+            <h3>Build</h3>
+            <p>Package everything into containers &mdash; Docker images and K3s deployments &mdash; ready to ship anywhere.</p>
+          </article>
+
+          <article class="step-card">
+            <div class="step-illust" aria-hidden="true">
+              <svg viewBox="0 0 120 120" width="100%" height="100%">
+                <path d="M60 18 L92 28 L92 60 Q92 88 60 102 Q28 88 28 60 L28 28 Z" fill="rgba(0,217,163,0.15)"/>
+                <path d="M60 18 L92 28 L92 60 Q92 88 60 102 Q28 88 28 60 L28 28 Z" stroke="#00d9a3" stroke-width="2.5" fill="none"/>
+                <polyline points="42,58 55,71 80,46" stroke="#00d9a3" stroke-width="5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>
+              </svg>
+            </div>
+            <span class="step-num">04</span>
+            <h3>Test</h3>
+            <p>Validate with functional and non-functional checks &mdash; the foundation of every Cisco ATE phase I've completed.</p>
+          </article>
+
+          <article class="step-card">
+            <div class="step-illust" aria-hidden="true">
+              <svg viewBox="0 0 120 120" width="100%" height="100%">
+                <path d="M22 76 Q14 76 14 68 Q14 60 24 58 Q26 46 40 46 Q50 38 62 46 Q74 44 80 54 Q92 56 92 67 Q92 76 80 76 Z" fill="rgba(91,140,255,0.18)"/>
+                <path d="M22 76 Q14 76 14 68 Q14 60 24 58 Q26 46 40 46 Q50 38 62 46 Q74 44 80 54 Q92 56 92 67 Q92 76 80 76 Z" stroke="#5b8cff" stroke-width="2" fill="none"/>
+                <path d="M52 48 L58 38 Q64 32 70 38 L76 48 L76 80 L52 80 Z" fill="#b06bff"/>
+                <circle cx="64" cy="50" r="3.5" fill="#0a1124"/>
+                <path d="M52 78 L44 92 L52 86 Z" fill="#b06bff" opacity="0.7"/>
+                <path d="M76 78 L84 92 L76 86 Z" fill="#b06bff" opacity="0.7"/>
+                <path d="M58 82 L56 92 L62 88 L60 100 L64 90 L66 100 L68 88 L72 92 L70 82 Z" fill="#ffb86b"/>
+              </svg>
+            </div>
+            <span class="step-num">05</span>
+            <h3>Deploy</h3>
+            <p>Ship to environments through CI/CD &mdash; Jenkins, GitLab CI, K3s &mdash; with zero-touch rollouts.</p>
+          </article>
+
+          <article class="step-card">
+            <div class="step-illust" aria-hidden="true">
+              <svg viewBox="0 0 120 120" width="100%" height="100%">
+                <rect x="14" y="24" width="92" height="62" rx="6" fill="#0a1124" stroke="#5b8cff" stroke-width="2"/>
+                <line x1="14" y1="38" x2="106" y2="38" stroke="#1f2a44" stroke-width="1.5"/>
+                <circle cx="22" cy="31" r="2" fill="#00d9a3"/>
+                <circle cx="30" cy="31" r="2" fill="#ffb86b"/>
+                <circle cx="38" cy="31" r="2" fill="#5b8cff"/>
+                <rect x="22" y="62" width="6" height="18" rx="1" fill="#5b8cff"/>
+                <rect x="31" y="54" width="6" height="26" rx="1" fill="#00d9a3"/>
+                <rect x="40" y="50" width="6" height="30" rx="1" fill="#b06bff"/>
+                <rect x="49" y="58" width="6" height="22" rx="1" fill="#5b8cff"/>
+                <polyline points="62,72 74,58 84,64 96,48" stroke="#00d9a3" stroke-width="2.5" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+                <circle cx="62" cy="72" r="2.5" fill="#00d9a3"/>
+                <circle cx="74" cy="58" r="2.5" fill="#00d9a3"/>
+                <circle cx="84" cy="64" r="2.5" fill="#00d9a3"/>
+                <circle cx="96" cy="48" r="2.5" fill="#00d9a3"/>
+                <rect x="60" y="44" width="36" height="3" rx="1" fill="#1f2a44"/>
+              </svg>
+            </div>
+            <span class="step-num">06</span>
+            <h3>Monitor</h3>
+            <p>Observe health, performance, and reliability &mdash; then feed insights back into the next planning cycle.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============ SKILLS ============ -->
+      <section id="skills" class="section reveal">
+        <div class="section-head">
+          <span class="section-num">03.</span>
+          <h2 class="section-title">Tech Stack</h2>
+          <span class="section-rule"></span>
+        </div>
+        <p class="section-lead">The tools I use to design, build, and ship reliable infrastructure.</p>
+
+        <div class="stack-group">
+          <h4 class="stack-label">Cloud &amp; DevOps</h4>
+          <div class="logo-grid">
+            <div class="logo-tile"><img src="https://skillicons.dev/icons?i=kubernetes" alt="" width="40" height="40" loading="lazy"/><span>Kubernetes</span></div>
+            <div class="logo-tile"><img src="https://skillicons.dev/icons?i=docker" alt="" width="40" height="40" loading="lazy"/><span>Docker</span></div>
+            <div class="logo-tile"><img src="https://skillicons.dev/icons?i=jenkins" alt="" width="40" height="40" loading="lazy"/><span>Jenkins</span></div>
+            <div class="logo-tile"><img src="https://skillicons.dev/icons?i=aws" alt="" width="40" height="40" loading="lazy"/><span>AWS</span></div>
+            <div class="logo-tile"><img src="https://skillicons.dev/icons?i=gitlab" alt="" width="40" height="40" loading="lazy"/><span>GitLab CI</span></div>
+            <div class="logo-tile"><img src="https://skillicons.dev/icons?i=githubactions" alt="" width="40" height="40" loading="lazy"/><span>CI/CD</span></div>
+          </div>
+        </div>
+
+        <div class="stack-group">
+          <h4 class="stack-label">Languages</h4>
+          <div class="logo-grid">
+            <div class="logo-tile"><img src="https://skillicons.dev/icons?i=python" alt="" width="40" height="40" loading="lazy"/><span>Python</span></div>
+            <div class="logo-tile"><img src="https://skillicons.dev/icons?i=bash" alt="" width="40" height="40" loading="lazy"/><span>Shell / Bash</span></div>
+            <div class="logo-tile"><img src="https://skillicons.dev/icons?i=java" alt="" width="40" height="40" loading="lazy"/><span>Java</span></div>
+            <div class="logo-tile"><img src="https://skillicons.dev/icons?i=mysql" alt="" width="40" height="40" loading="lazy"/><span>SQL</span></div>
+          </div>
+        </div>
+
+        <div class="stack-group">
+          <h4 class="stack-label">Infrastructure &amp; Networking</h4>
+          <div class="logo-grid">
+            <div class="logo-tile"><img src="https://skillicons.dev/icons?i=linux" alt="" width="40" height="40" loading="lazy"/><span>Linux</span></div>
+            <div class="logo-tile"><img src="https://skillicons.dev/icons?i=ubuntu" alt="" width="40" height="40" loading="lazy"/><span>Ubuntu</span></div>
+            <div class="logo-tile">
+              <svg class="tile-icon" viewBox="0 0 36 24" aria-hidden="true">
+                <g fill="#1BA0D7">
+                  <rect x="0" y="9" width="3" height="6" rx="0.5"/>
+                  <rect x="5" y="6" width="3" height="12" rx="0.5"/>
+                  <rect x="10" y="3" width="3" height="18" rx="0.5"/>
+                  <rect x="15" y="0" width="3" height="24" rx="0.5"/>
+                  <rect x="20" y="3" width="3" height="18" rx="0.5"/>
+                  <rect x="25" y="6" width="3" height="12" rx="0.5"/>
+                  <rect x="30" y="9" width="3" height="6" rx="0.5"/>
+                </g>
+              </svg>
+              <span>Cisco FMC / FTD</span>
+            </div>
+            <div class="logo-tile"><img src="https://skillicons.dev/icons?i=postman" alt="" width="40" height="40" loading="lazy"/><span>REST APIs</span></div>
+            <div class="logo-tile">
+              <svg class="tile-icon" viewBox="0 0 24 24" fill="none" stroke="#5b8cff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <rect x="2" y="3" width="20" height="7" rx="2"/>
+                <rect x="2" y="14" width="20" height="7" rx="2"/>
+                <circle cx="6" cy="6.5" r="0.8" fill="#5b8cff"/>
+                <circle cx="6" cy="17.5" r="0.8" fill="#5b8cff"/>
+                <line x1="10" y1="6.5" x2="14" y2="6.5"/>
+                <line x1="10" y1="17.5" x2="14" y2="17.5"/>
+              </svg>
+              <span>VM Provisioning</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="stack-group">
+          <h4 class="stack-label">Tools &amp; Platforms</h4>
+          <div class="logo-grid">
+            <div class="logo-tile"><img src="https://skillicons.dev/icons?i=git" alt="" width="40" height="40" loading="lazy"/><span>Git</span></div>
+            <div class="logo-tile"><img src="https://skillicons.dev/icons?i=github" alt="" width="40" height="40" loading="lazy"/><span>GitHub</span></div>
+            <div class="logo-tile">
+              <svg class="tile-icon" viewBox="0 0 32 32" aria-hidden="true">
+                <path fill="#2684FF" d="M30 12.5h-9.4a4.25 4.25 0 0 0 4.25 4.25h1.73v1.68a4.25 4.25 0 0 0 4.25 4.25v-9.36A.82.82 0 0 0 30 12.5z"/>
+                <path fill="#2684FF" d="M25.35 7.83H15.94a4.25 4.25 0 0 0 4.25 4.25h1.73v1.68a4.25 4.25 0 0 0 4.25 4.25V8.65a.82.82 0 0 0-.82-.82z"/>
+                <path fill="#2684FF" d="M20.69 3.16h-9.4a4.25 4.25 0 0 0 4.25 4.25h1.74v1.68a4.25 4.25 0 0 0 4.25 4.25V3.98a.82.82 0 0 0-.84-.82z"/>
+              </svg>
+              <span>Jira</span>
+            </div>
+            <div class="logo-tile">
+              <svg class="tile-icon" viewBox="0 0 24 24" fill="none" stroke="#2684FF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+                <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                <polyline points="14 2 14 8 20 8"/>
+                <line x1="8" y1="13" x2="16" y2="13"/>
+                <line x1="8" y1="17" x2="13" y2="17"/>
+              </svg>
+              <span>Confluence</span>
+            </div>
+            <div class="logo-tile">
+              <svg class="tile-icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="color: var(--text-dim);" aria-hidden="true">
+                <circle cx="6" cy="6" r="2"/>
+                <circle cx="6" cy="18" r="2"/>
+                <circle cx="18" cy="12" r="2"/>
+                <line x1="6" y1="8" x2="6" y2="16"/>
+                <path d="M8 7c2 2 6 3 8 5"/>
+                <path d="M8 17c2-2 6-3 8-5"/>
+              </svg>
+              <span>Perforce</span>
+            </div>
+            <div class="logo-tile"><img src="https://skillicons.dev/icons?i=vscode" alt="" width="40" height="40" loading="lazy"/><span>VS Code</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ EXPERIENCE ============ -->
+      <section id="experience" class="section reveal">
+        <div class="section-head">
+          <span class="section-num">04.</span>
+          <h2 class="section-title">Experience</h2>
+          <span class="section-rule"></span>
+        </div>
+
+        <ol class="timeline">
+          <li class="t-item">
+            <div class="t-dot"></div>
+            <div class="t-card">
+              <div class="t-top">
+                <h3>Software Automation Trainee</h3>
+                <span class="t-date">Oct 2025 — Present</span>
+              </div>
+              <p class="t-org">Cisco Systems India Pvt Ltd · SBG &mdash; FMC Team</p>
+              <ul>
+                <li>Contributing to deployment and automation workflows in Cisco SBG FMC environments.</li>
+                <li>Working on <strong>FTD simulator deployment automation</strong> — VM provisioning, IP assignment, NAT configuration, and K3s-based simulator setup.</li>
+                <li>Automating repetitive infrastructure and deployment operations using <strong>Python scripting and REST APIs</strong>.</li>
+                <li>Hands-on with Linux systems, Kubernetes/K3s, Docker-based environments, and CI/CD fundamentals.</li>
+                <li>Collaborating cross-functionally to streamline simulator setup and improve deployment efficiency.</li>
+              </ul>
+              <div class="chips small">
+                <span class="chip">Python</span>
+                <span class="chip">K3s</span>
+                <span class="chip">Docker</span>
+                <span class="chip">Linux</span>
+                <span class="chip">REST APIs</span>
+                <span class="chip">CI/CD</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="t-item">
+            <div class="t-dot"></div>
+            <div class="t-card">
+              <div class="t-top">
+                <h3>Full Stack Developer Intern</h3>
+                <span class="t-date">2025</span>
+              </div>
+              <p class="t-org">Vulture Lines Pvt Ltd</p>
+              <ul>
+                <li>Developed an AI-powered recommendation system using collaborative, content-based, and hybrid models.</li>
+                <li>Leveraged real-time query analytics to improve product relevance and increase customer buying rate.</li>
+                <li>Implemented scalable backend logic and improved customer engagement, inspired by Amazon-style systems.</li>
+              </ul>
+              <div class="chips small">
+                <span class="chip">Python</span>
+                <span class="chip">React</span>
+                <span class="chip">ML</span>
+                <span class="chip">REST APIs</span>
+              </div>
+            </div>
+          </li>
+
+          <li class="t-item">
+            <div class="t-dot"></div>
+            <div class="t-card">
+              <div class="t-top">
+                <h3>Web Developer Intern</h3>
+                <span class="t-date">2024</span>
+              </div>
+              <p class="t-org">Siemens Industry Software (India) Pvt Ltd</p>
+              <ul>
+                <li>Designed and deployed <strong>LearnNow Training Management System</strong> using the Mendix low-code platform.</li>
+                <li>Implemented role-based access, course scheduling, and administrative dashboards.</li>
+                <li>Contributed to live production features, demonstrating rapid low-code delivery.</li>
+              </ul>
+              <div class="chips small">
+                <span class="chip">Mendix</span>
+                <span class="chip">RBAC</span>
+                <span class="chip">Low-Code</span>
+              </div>
+            </div>
+          </li>
+        </ol>
+      </section>
+
+      <!-- ============ PROJECTS ============ -->
+      <section id="projects" class="section reveal">
+        <div class="section-head">
+          <span class="section-num">05.</span>
+          <h2 class="section-title">Featured Projects</h2>
+          <span class="section-rule"></span>
+        </div>
+
+        <div class="projects-grid">
+          <!-- Featured: PodPilot -->
+          <article class="project-card featured">
+            <div class="project-tag">Featured · DevOps Automation</div>
+            <header class="project-head">
+              <h3>
+                <span class="proj-icon">&#9881;</span> PodPilot
+              </h3>
+              <p class="project-sub">Automated FTD Simulator Deployment &amp; FMC Registration Tool</p>
+            </header>
+            <p class="project-desc">
+              An end-to-end automation tool that turns a multi-step manual FTD simulator
+              deployment into a single command. Handles VM setup, IP &amp; NAT configuration,
+              K3s installation, pod deployment, and FMC registration — built for repeatability
+              and operational consistency across simulator environments.
+            </p>
+            <ul class="project-points">
+              <li>Reduced repetitive manual deployment effort across multiple environments</li>
+              <li>Improved deployment consistency and reduced human error</li>
+              <li>API-driven FMC registration with idempotent retries</li>
+              <li>Modular Python design for easy extension to new simulator variants</li>
+            </ul>
+            <div class="chips small">
+              <span class="chip">Python</span>
+              <span class="chip">Linux</span>
+              <span class="chip">Docker</span>
+              <span class="chip">K3s</span>
+              <span class="chip">Automation</span>
+              <span class="chip">REST APIs</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <header class="project-head">
+              <h3><span class="proj-icon">&#128202;</span> AI-Powered E-Commerce Recommendation System</h3>
+              <p class="project-sub">Personalized product discovery at scale</p>
+            </header>
+            <p class="project-desc">
+              Built a personalized recommendation engine using collaborative, content-based, and
+              hybrid filtering. Real-time query analytics improved click-through and product
+              relevance, mirroring industry patterns from Amazon-style platforms.
+            </p>
+            <ul class="project-points">
+              <li>Improved CTR by ~15% for over 10,000 users</li>
+              <li>Hybrid model balances cold-start and behavioral signals</li>
+              <li>Enhanced customer satisfaction and product discovery</li>
+            </ul>
+            <div class="chips small">
+              <span class="chip">Python</span>
+              <span class="chip">React</span>
+              <span class="chip">Java</span>
+              <span class="chip">HTML/CSS</span>
+              <span class="chip">ML</span>
+            </div>
+          </article>
+
+          <article class="project-card">
+            <header class="project-head">
+              <h3><span class="proj-icon">&#127891;</span> LearnNow — Training Management System</h3>
+              <p class="project-sub">End-to-end LMS built at Siemens</p>
+            </header>
+            <p class="project-desc">
+              A complete training management platform with course creation, scheduling, and
+              role-based access — enabling educational admins to manage teachers, trainees, and
+              courses in one place. Shipped as a live production feature during my Siemens
+              internship.
+            </p>
+            <ul class="project-points">
+              <li>Role-based access for admins, teachers, and trainees</li>
+              <li>Course scheduling and administrative dashboards</li>
+              <li>Delivered via Mendix low-code platform</li>
+            </ul>
+            <div class="chips small">
+              <span class="chip">Mendix</span>
+              <span class="chip">RBAC</span>
+              <span class="chip">Low-Code</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- ============ CERTIFICATIONS ============ -->
+      <section id="certifications" class="section reveal">
+        <div class="section-head">
+          <span class="section-num">06.</span>
+          <h2 class="section-title">Certifications &amp; Training</h2>
+          <span class="section-rule"></span>
+        </div>
+
+        <div class="certs-grid">
+          <div class="cert-card">
+            <div class="cert-badge">ATE · 04</div>
+            <h3>Cloud Automation</h3>
+            <p class="cert-issuer">Cisco Systems India Pvt Ltd</p>
+            <p class="cert-date">Apr 2026</p>
+            <p class="cert-desc">Cloud automation, deployment workflows, and modern software delivery practices.</p>
+          </div>
+          <div class="cert-card">
+            <div class="cert-badge">ATE · 03</div>
+            <h3>Non-Functional Testing</h3>
+            <p class="cert-issuer">Cisco Systems India Pvt Ltd</p>
+            <p class="cert-date">Mar 2026</p>
+            <p class="cert-desc">Performance, reliability, and non-functional testing concepts.</p>
+          </div>
+          <div class="cert-card">
+            <div class="cert-badge">ATE · 02</div>
+            <h3>Functional Testing</h3>
+            <p class="cert-issuer">Cisco Systems India Pvt Ltd</p>
+            <p class="cert-date">Feb 2026</p>
+            <p class="cert-desc">Functional testing, software validation, and quality assurance.</p>
+          </div>
+          <div class="cert-card">
+            <div class="cert-badge">ATE · 01</div>
+            <h3>Planning &amp; Automation</h3>
+            <p class="cert-issuer">Cisco Systems India Pvt Ltd</p>
+            <p class="cert-date">Jan 2026</p>
+            <p class="cert-desc">Planning, automation workflows, and software development practices.</p>
+          </div>
+          <div class="cert-card">
+            <div class="cert-badge">AI · Dev</div>
+            <h3>GitHub Copilot for Python</h3>
+            <p class="cert-issuer">Cisco Systems India Pvt Ltd</p>
+            <p class="cert-date">Nov 2025</p>
+            <p class="cert-desc">AI-assisted software development using GitHub Copilot and Python.</p>
+          </div>
+          <div class="cert-card">
+            <div class="cert-badge">Google</div>
+            <h3>Google Developer Training</h3>
+            <p class="cert-issuer">Google · Foundational</p>
+            <p class="cert-date">&nbsp;</p>
+            <p class="cert-desc">Responsive and mobile-first design principles.</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ EDUCATION & ACHIEVEMENTS ============ -->
+      <section id="education" class="section reveal split">
+        <div>
+          <div class="section-head">
+            <span class="section-num">07.</span>
+            <h2 class="section-title">Education</h2>
+            <span class="section-rule"></span>
+          </div>
+          <div class="edu-card">
+            <h3>B.E. in Computer Science and Engineering</h3>
+            <p class="edu-school">PSNA College of Engineering and Technology</p>
+            <p class="edu-meta">2025 · CGPA <strong>7.11</strong></p>
+          </div>
+        </div>
+
+        <div>
+          <div class="section-head">
+            <span class="section-num">08.</span>
+            <h2 class="section-title">Achievements</h2>
+            <span class="section-rule"></span>
+          </div>
+          <div class="ach-list">
+            <div class="ach-card">
+              <h4>Runner-up · Cyber Security Workshop Competition</h4>
+              <p class="edu-meta">Cyber Monk at PSNACE · 2022</p>
+              <p>Implemented IAM and RBAC principles, contributing to secure application design expertise.</p>
+            </div>
+            <div class="ach-card">
+              <h4>Dr. Kalam Young Achievers Award · Participant</h4>
+              <p class="edu-meta">World Youth Federation · 2023</p>
+              <p>Recognized for leadership, innovation, and commitment to advanced development methodologies.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ============ CONTACT ============ -->
+      <section id="contact" class="section reveal contact">
+        <div class="section-head center">
+          <span class="section-num">09.</span>
+          <h2 class="section-title">Let's Build Something</h2>
+          <span class="section-rule"></span>
+        </div>
+
+        <p class="contact-lead">
+          I'm actively exploring <strong>DevOps</strong>, <strong>Cloud Engineering</strong>, and
+          <strong>SRE</strong> opportunities. If you're hiring, collaborating on an automation
+          project, or just want to talk infra &mdash; my inbox is open.
+        </p>
+
+        <div class="contact-actions">
+          <a class="btn btn-primary" href="mailto:thirumalaiv0114@gmail.com">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            Email Me
+          </a>
+          <a class="btn btn-ghost" href="https://www.linkedin.com/in/thirumalai-v/" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M20.5 2h-17A1.5 1.5 0 002 3.5v17A1.5 1.5 0 003.5 22h17a1.5 1.5 0 001.5-1.5v-17A1.5 1.5 0 0020.5 2zM8 19H5v-9h3zM6.5 8.25A1.75 1.75 0 118.3 6.5a1.78 1.78 0 01-1.8 1.75zM19 19h-3v-4.74c0-1.42-.6-1.93-1.38-1.93A1.74 1.74 0 0013 14.19V19h-3v-9h2.9v1.3a3.11 3.11 0 012.7-1.4c1.55 0 3.36.86 3.36 3.66z"/></svg>
+            LinkedIn
+          </a>
+          <a class="btn btn-ghost" href="https://github.com/Thirumalai14" target="_blank" rel="noopener noreferrer">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.3.8-.6v-2.1c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.6-1.3-1.6-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2 1-.3 2-.4 3-.4s2 .1 3 .4c2.3-1.5 3.3-1.2 3.3-1.2.7 1.6.2 2.8.1 3.1.8.8 1.2 1.9 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+            GitHub
+          </a>
+          <a class="btn btn-ghost" href="assets/Thirumalai-V-DevOps-Resume.pdf" target="_blank" rel="noopener noreferrer" download>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+            Resume (PDF)
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <p>
+        Built with <span class="heart">&#9889;</span> by Thirumalai V ·
+        <a href="mailto:thirumalaiv0114@gmail.com">thirumalaiv0114@gmail.com</a>
+      </p>
+      <p class="footer-sub">Designed &amp; deployed as a static site. Hosted on GitHub Pages / Netlify / Vercel.</p>
+    </footer>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
