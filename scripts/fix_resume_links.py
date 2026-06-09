@@ -18,7 +18,7 @@ import pikepdf
 
 
 PDF_PATH = Path(
-    "/Users/tveerapa/Desktop/Draft/portfolio/assets/"
+    "/Users/tveerapa/Desktop/Draft/Main/portfolio/assets/"
     "Thirumalai-V-DevOps-Resume.pdf"
 )
 
